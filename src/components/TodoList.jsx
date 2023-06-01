@@ -1,7 +1,7 @@
 import React from 'react';
 import useTodoStore from '../stores/TodoStore';
 
-function TodoList(props) {
+function TodoList() {
   const todos = useTodoStore(state => state.todos);
   const deleteTodo = useTodoStore(state => state.deleteTodo);
   const completeTodo = useTodoStore(state => state.completeTodo);

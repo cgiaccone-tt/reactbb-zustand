@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
 import useTodoStore from '../stores/TodoStore';
 import useTodoInputStore from '../stores/TodoInputStore';
 
-function TodoForm(props) {
+function TodoForm() {
   const addTodo = useTodoStore(state => state.addTodo);
   const handleInput = useTodoInputStore(state => state.handleInput);
   const todoInput = useTodoInputStore(state => state.todoInput);
